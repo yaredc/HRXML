@@ -23,7 +23,7 @@
                     </setCustomerKey>
                     <setStatusId>
                         <xsl:choose>
-                            <xsl:when test="contains($trueValues,translate(normalize-space(./hr:PositionOpeningStatusCode),$upperCase,$loweCase))">
+                            <xsl:when test="contains($trueValues,translate(normalize-space(./hr:PositionOpeningStatusCode),$upperCase,$lowerCase))">
                                 <xsl:value-of select="1"/>
                             </xsl:when>
                             <xsl:otherwise>
